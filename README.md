@@ -22,8 +22,11 @@ You are required to model the demand for shared bikes with the available indepen
 
 # Conclusions:
 
+The equation of best fitted surface based on model lm:
+cnt=0.293426 + (0.360252 x temp) + (-0.114046 x windspeed) + (-0.096127 x season_spring) + (0.079929 x season_winter) + (-0.100545 x mnth_dec) + (-0.074138 x mnth_feb) + (-0.100478 x mnth_jan) + (-0.066659 x mnth_jul) + (-0.104161 x mnth_nov)  + ( 0.256542 x yr_1) + ( 0.028241  x weekday_Sat) + ( -0.075520  x weathersit_Cloudy) + ( -0.264098  x weathersit_Snow)
+
 Below are the gignificant variables to predict the demand for shared bikes
-'workingday', 'temp', 'windspeed', 'season_spring--season', 'season_winter--season', 'mnth_dec---month', 'mnth_jul --month', 'mnth_nov --month', 'yr_1---year(2019)', 'weekday_Sat --weekday', 'weathersit_Snow--weathersit'
+ 'temp', 'windspeed', 'season_spring--season', 'season_winter--season','mnth_dec---month', 'mnth_jul --month', 'mnth_nov --month', 'yr_1---year(2019)', 'weekday_Sat --weekday','weathersit_Snow--weathersit','weathersit_CLoudy--weathersit'
 
 Technologies Used
 sklearn pandas statsmodels matplotlib numpy 
